@@ -10,9 +10,9 @@
     <div class="main col-lg-6">
 
         <h1 style="text-align: center;">{{$post['title']}}</h1>
-        {{--
-            <img class="leftimg" src="{{asset("images/" . $post['path_image'])}}" width="400px" alt="">
-        --}}
+        
+        <img class="leftimg" src="{{ $post['img'] }}" width="400px" alt="">
+
         {!! $post['description'] !!}
 
 

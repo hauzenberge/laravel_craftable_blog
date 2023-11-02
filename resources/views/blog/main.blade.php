@@ -19,9 +19,9 @@
         <h2>{{$title}}</h2>
         @foreach($posts as $post)
             <a href="{{url("/post/" . $post["id"])}}" class="item col-lg-6">
-{{--
-                <img class="col-lg-4 " src="{{asset('images/' . $post['path_image'])}}" alt="" width="150px">
---}}                
+
+                <img class="col-lg-4 " src="{{ $post['img'] }}" alt="" width="150px">
+                
                 <div class="description col-lg-8">
                     <b>{{$post['title']}}</b>
                     <br>

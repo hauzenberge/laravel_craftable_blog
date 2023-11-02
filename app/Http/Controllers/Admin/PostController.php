@@ -97,6 +97,7 @@ class PostController extends Controller
         $this->authorize('admin.post.create');        
 
         return view('admin.post.create', [
+            'post' => new Post,
             'categories' => Category::richList()
         ]);
     }

@@ -8,9 +8,13 @@ Vue.component('post-form', {
                 title:  '' ,
                 description:  '' ,
                 
-                categories: ''
+                categories: '',
+
+              //  title:  this.getLocalizedFormDefaults(),
+              //  perex:  this.getLocalizedFormDefaults()
                 
-            }
+            },
+            mediaCollections: ['post_image']
         }
     }
 
